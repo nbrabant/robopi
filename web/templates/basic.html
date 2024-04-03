@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Robo web</title>
+        <meta name="viewport" content="width=device-width"/>
+    </head>
+    <style>
+        body, a {
+            font-family: Verdana, Arial, sans-serif;
+            text-align: center;
+            text-decoration: none;
+        }
+        button {
+            font-size: 300%;
+            margin: 0px 10px;
+            height: 70px;
+            width: 60px;
+        }
+    </style>
+    <body>
+        <h1>Robo web</h1>
+        {{ stamp }}
+        <form method="post">
+            <button formaction="forward">&blacktriangle;</button>
+            <button formaction="backward">&blacktriangledown;</button>
+            <br /><br />
+            <button formaction="left">&blacktriangleleft;</button>
+            <button formaction="right">&blacktriangleright;</button>
+            <br /><br />
+            <button formaction="spin_left">&circlearrowleft;</button>
+            <button formaction="spin_right">&circlearrowright;</button>
+            <br /><br />
+            <button formaction="noop">X</button>
+        </form>
+    </body>
+</html>
